@@ -1,0 +1,42 @@
++-----------+
+|Tags		|
++-----------+
+|//enumerate|
++-----------+
+	1 |
+	  |
+      |
+      |
+     / \
+     \ /
++-----------------------+
+|Item					|
++-----------------------+
+|int src 				|
+|String name 			|
+|boolean fave 			| 
+|Tags tags 				|
++-----------------------+
+|String getName() 		|
+|boolean isFave() 		|
+|int getSrc() 			|
+|Tags getTags() 		|
+|void setFave(boolean f)|
++-----------------------+
+		N |
+		  |
+		  |
+		 / \
+		 \ /
++-----------------------+
+|Storage				|
++-----------------------+
+|Item items[]			|
+|int count				|
++-----------------------+
+|Item[] getList(Tags t)	|
+|Item[] getFaves()		|
+|void addItem(Item i)   |
+|int getIndex(Item i)   |
+|void deleteItem(int i) |
++-----------------------+
