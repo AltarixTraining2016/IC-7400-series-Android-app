@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -42,6 +43,11 @@ public class CustomAdapter extends BaseAdapter {
         Item item = data.get(position);
         ((TextView) view.findViewById(R.id.name)).setText(item.getItemName());
         ((TextView) view.findViewById(R.id.desc)).setText(item.getDescription());
+        if(item.isFave())
+            ((ImageView) view.findViewById(R.id.star)).setImageResource(R.mipmap.starred);
+        else
+            ((ImageView) view.findViewById(R.id.star)).setImageResource(R.mipmap.notstarred);
+
         return view;
     }
 }
