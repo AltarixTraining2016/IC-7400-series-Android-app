@@ -8,16 +8,17 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
-        android:id="@+id/textView2"
+        android:id="@+id/name"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Small Text"
-        android:id="@+id/textView3"
+        android:id="@+id/desc"
         android:layout_marginLeft="15dp" />
 </LinearLayout>
