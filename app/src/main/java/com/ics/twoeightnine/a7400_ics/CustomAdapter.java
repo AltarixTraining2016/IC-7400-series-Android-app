@@ -1,6 +1,7 @@
 package com.ics.twoeightnine.a7400_ics;
 
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,11 @@ import java.util.ArrayList;
 public class CustomAdapter extends BaseAdapter {
     private ArrayList<Item> data;
     private LayoutInflater inf;
+
+    public CustomAdapter(Context context, ArrayList<Item> data){
+        inf = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.data = data;
+    }
 
     @Override
     public int getCount() {
