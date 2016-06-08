@@ -43,10 +43,11 @@ public class CustomAdapter extends BaseAdapter {
         Item item = data.get(position);
         ((TextView) view.findViewById(R.id.name)).setText(item.getItemName());
         ((TextView) view.findViewById(R.id.desc)).setText(item.getDescription());
+
         if(item.isFave())
-            ((ImageView) view.findViewById(R.id.star)).setImageResource(R.mipmap.starred);
+            ((ImageView) view.findViewById(R.id.star)).setImageResource(R.drawable.starred);
         else
-            ((ImageView) view.findViewById(R.id.star)).setImageResource(R.mipmap.notstarred);
+            ((ImageView) view.findViewById(R.id.star)).setImageResource(R.drawable.notstarred);
 
         return view;
     }
