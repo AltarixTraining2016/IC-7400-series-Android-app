@@ -11,6 +11,8 @@ public class Item {
         this.name = name;
         description = desc;
         this.src = src;
+        tags = 0;
+        fave = false;
     }
 
     public int getSrc(){
